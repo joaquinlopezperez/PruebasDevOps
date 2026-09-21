@@ -9,27 +9,15 @@ package com.mycompany.pruebasdevops;
  * @author daw2
  */
 public class Tarea {
-    
-    
-    private int id;
+
     private String nombre;
     private String asignatura;
-
-    public Tarea(int id, String nombre, String asignatura) {
-        this.id = id;
+    
+    public Tarea(String nombre, String asignatura) {
         this.nombre = nombre;
         this.asignatura = asignatura;
     }
 
-    
-    
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getNombre() {
         return nombre;
@@ -51,16 +39,9 @@ public class Tarea {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Tarea -> ");
-        sb.append("Id: ").append(id);
-        sb.append(", Nombre: ").append(nombre);
+        sb.append("Nombre: ").append(nombre);
         sb.append(", Asignatura: ").append(asignatura);
         return sb.toString();
     }
-    
-    
-    
-    
-    
-    
-    
+
 }
